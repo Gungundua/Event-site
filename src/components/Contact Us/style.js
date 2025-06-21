@@ -27,6 +27,7 @@ const Wrapper = styled.section`
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
+  margin-top: 58px;
 
   .sections {
     display: flex;

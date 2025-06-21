@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { galleryData } from './photos.jsx';
+import { motion, AnimatePresence } from 'framer-motion';
 import './style.css';
 
+const categories = ["All", "Mehendi", "Haldi", "Sangeet"];
 
-const categories = ["All" , "Mehendi" , "Haldi" , "Sangeet"]
-export default function index() {
- const [activeCategory , setActiveCategory]  = useState("All");
-const filteredData = activeCategory === "All" ? galleryData : galleryData.filter((item=> item.category=== activeCategory));
+export default function Index() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredData =
+    activeCategory === "All"
+      ? galleryData
+      : galleryData.filter((item) => item.category === activeCategory);
 
   return (
     <div className="gallery">
@@ -16,29 +21,31 @@ const filteredData = activeCategory === "All" ? galleryData : galleryData.filter
             key={cat}
             onClick={() => setActiveCategory(cat)}
             className={activeCategory === cat ? "active" : ""}
-
           >
-            {cat}
+            <span>{cat}</span>
+            
           </button>
         ))}
       </div>
 
-      {/* Cards */}
       <div className="photos">
-        {filteredData.map((item) => (
-          <div key={item.id} className="id">
-            <img
-              src={item.images}
-              alt={item.title}
-              className="images"
-            />
-            <div className="title">
-              {item.title}
-            </div>
-          </div>
-        ))}
+        <AnimatePresence mode="wait">
+          {filteredData.map((item) => (
+            <motion.div
+              key={item.id}
+              className="id"
+              layout
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.4 }}
+            >
+              <img src={item.images} alt={item.title} className="images" />
+              <div className="title">{item.title}</div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
     </div>
   );
 }
-

@@ -52,6 +52,10 @@ const Wrapper = styled.section`
     color: #222;
   }
 
+  .section1{
+  display: flex;
+  flex-direction:row
+  }
   .info p {
     margin: 15px 0;
     font-size: 16px;

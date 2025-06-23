@@ -52,7 +52,8 @@ const Wrapper = styled.section`
     cursor: pointer;
     opacity: 0;
     &:hover {
-      transform: scale(2.25);
+      transform: translateY(-20px);
+  
     }
     .icon-wrapper {
       position: relative;

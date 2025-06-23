@@ -189,6 +189,7 @@ margin-top: 50px;
 .hero-title {
   font-size: 2.5rem;
   font-weight: 800;
+  line-height: 3;
   margin-bottom: -20px;
   font-family: 'Georgia', serif;
 }

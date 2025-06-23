@@ -15,8 +15,9 @@ const Wrapper = styled.section`
   justify-content: space-between;
   align-items: center;
   padding: 0.9rem 2rem; 
-  background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
   

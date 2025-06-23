@@ -79,7 +79,7 @@ flex: 1;
     align-items: center;
     justify-content: space-between;
     height: auto;
-    padding: 20px 20px 30px 0px;
+    padding: 20px 20px 50px 0px;
   }
   .footer p {
     position: absolute;

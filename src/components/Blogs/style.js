@@ -44,7 +44,8 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px){
   .row{
-  margin-left: 40px;
+  margin-left: 35px;
   }}
-`;
-export default Wrapper;
+`
+
+export default Wrapper

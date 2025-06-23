@@ -98,14 +98,14 @@ const Blogs = () => {
                 <div className="card-body">
                   <h5 className="card-title">{item.title}</h5>
                   <p className="card-text">{item.text}</p>
-                  <motion.a
+                  {/* <motion.a
                     href={item.link}
                     className="btn btn-primary custom-btn"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     Read More
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </motion.div>

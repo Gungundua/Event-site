@@ -42,7 +42,8 @@ const Wrapper = styled.div`
   max-width: 900px;
   padding: 0 20px;
 }
-@media (max-width: 768px) {
+  
+@media (max-width: 740px) {
   .founder {
     flex-direction: column;
     gap: 40px;
@@ -54,8 +55,9 @@ const Wrapper = styled.div`
 }
   .profile{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
   }
   .about-founder{
   font-size: 16px;
@@ -65,7 +67,8 @@ const Wrapper = styled.div`
   font-size: 19px;
   }
 .founder-heading{
-margin: 20px;
+margin: 10px;
+margin-left: -20px;
 padding-left:20px;
 color: #555;
 }

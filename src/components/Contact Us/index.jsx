@@ -12,14 +12,12 @@ const Contact = () => {
           <div className="info">
             <p>
               <i className="fa-solid fa-location-dot"></i>
-              5, Sindhi Colony Rd, opposite lane of Pink Square mall, Raja Park,<br />
-              Adarsh Nagar, Jaipur, Rajasthan 302004
-            </p>
+            Anshi Hospitality & Events, 2nd Floor, Amar Plaza, Income Tax  Colony, Model Town, Jagatpura, Jaipur, Rajasthan 302017   </p>
             <p>
               <i className="fa-solid fa-headset"></i>
-              +91 99505 23594<br />
-              +91 75682 23594<br />
-              sales.noonmoon@gmail.com
+              +91 6376444353<br />
+             
+            anshievent4811@gmail.com
             </p>
             <p>
               <i className="fa-regular fa-clock"></i>

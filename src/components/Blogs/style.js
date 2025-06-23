@@ -31,6 +31,16 @@ const Wrapper = styled.div`
   .container {
     border-color: #B38739;
   }
+    .card-text{
+    font-weight: 400;
+    }
+    .card-img-top {
+  width: 100%;
+  height: 250px;         /* You can adjust this as needed */
+  object-fit: cover;
+  display: block;
+}
+
   @media (max-width: 768px){
   .row{
   margin-left: 40px;

@@ -27,13 +27,16 @@ const Wrapper = styled.section`
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
-  margin-top: 58px;
+  margin-top: 78px;
+  
 
   .sections {
     display: flex;
+
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 
 
@@ -53,10 +56,11 @@ const Wrapper = styled.section`
   }
 
   .info p {
-    margin: 15px 0;
+    margin:15px 0;
     font-size: 16px;
     color: #333;
     line-height: 1.5;
+    
   }
 
   .info i {
@@ -122,7 +126,7 @@ const Wrapper = styled.section`
   }
 
   /* 📱 Mobile Styles */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 760px) {
     .sections {
       flex-direction: column;
     }

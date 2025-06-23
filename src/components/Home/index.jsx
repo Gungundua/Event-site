@@ -3,8 +3,19 @@ import video from '../assets/videoplayback.mp4'
 import weeding1 from "../assets/weeding1.jpg";
 import weeding2 from "../assets/weeding2.jpg";
 
-import weeding3 from "../assets/weeding3.jpg";
-import weeding4 from "../assets/weeding4.jpg";
+import weeding15 from "../assets/wedding15.jpeg";
+import weeding14 from "../assets/wedding14.jpeg";
+import weeding6 from "../assets/wedding6.jpg";
+
+import weeding7 from "../assets/wedding7.jpeg";
+import weeding8 from "../assets/wedding8.jpeg";
+import weeding9 from "../assets/wedding9.jpeg";
+import weeding10 from "../assets/wedding10.jpeg";
+import weeding11 from "../assets/wedding11.jpeg";
+
+import weeding12 from "../assets/wedding12.jpeg";
+import weeding13 from "../assets/wedding13.jpeg";
+
 import cor1 from "../assets/cor1.jpg";
 import cor2 from "../assets/cor2.jpg";
 import cor3 from "../assets/cor3.jpg";
@@ -46,7 +57,7 @@ export default function index() {
       <p>Our events leave attendees with cherished memories with their nearest and dearest. Collaborating with clients who want to share unforgettable moments with their family and friends is a priviledge we truly embrace.</p>
       <div className="carousel-container">
       <div className="carousel-track">
-        {[weeding1, weeding2 ,weeding3 ,weeding4 ,weeding1].map((img, index) => (
+        {[weeding14, weeding15 ,weeding13 ,weeding12 ,weeding6 , weeding7,weeding8,weeding9 ,weeding10,weeding11,weeding1,weeding12].map((img, index) => (
           <div className="carousel-slide" key={index}>
             <img className="images"src={img} alt={`Slide ${index}`} />
           </div>
@@ -59,7 +70,7 @@ export default function index() {
       <p>Choose us as your partner to educate employees or clients, promote brand awareness, celebrate achievements, boost employee morale, strengthen team dynamics, facilitate networking, or launch a new product or service.</p>       
     <div className="carousel-container">
       <div className="carousel-track">
-        {[cor1,cor2,cor3,cor4,cor5].map((img, index) => (
+        {[cor1,cor2,cor3,cor4,cor5 , cor1 ,cor2 ,cor3].map((img, index) => (
           <div className="carousel-slide" key={index}>
             <img className="images" src={img} alt={`Slide ${index}`} />
           </div>

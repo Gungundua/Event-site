@@ -16,16 +16,30 @@ const Footer = () => {
         <div className="footer">
           <div className="spacer" />
           <div className="center-icons">
-            <FaInstagram className="instagram" />
-            <RiLinkedinLine className="linkedin" />
+           <a
+  href="https://www.instagram.com/anshi_hospitality_and_events?igsh=aWl4Y3pzbmEzN2M4"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaInstagram className="instagram" />
+</a>
+
+<a
+  href="https://www.linkedin.com/in/yuvraj-yadav-991748333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <RiLinkedinLine className="linkedin" />
+</a>
+
           </div>
           <div className="floating-popup-wrapper">
             {showPopup && (
               <div className="floating-popup">
-                <a href="tel:1234567890" className="circle-btn phone">
+                <a href="tel:6376444353" className="circle-btn phone">
                   <MdPhone size={24} />
                 </a>
-                <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" className="circle-btn whatsapp">
+                <a href="https://wa.me/6376444353" target="_blank" rel="noopener noreferrer" className="circle-btn whatsapp">
                   <FaWhatsapp size={24} />
                 </a>
                 <button className="circle-btn close" onClick={closePopup}>

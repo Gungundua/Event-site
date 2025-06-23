@@ -18,6 +18,8 @@ max-width: 60%;
 align-self: center;
 margin: auto;
 text-align: center;
+margin-top: 30px;
+
 }
 .section2{
 display: flex;
@@ -28,6 +30,7 @@ max-width: 95%;
 align-self: center;
 margin: auto;
 text-align: center;
+margin-top: 30px;
 }
 h1{
 color: #ad844b;
@@ -38,7 +41,7 @@ p{
 color: #5d6e5e;
 }
 .carousel-container {
-margin-top: 50px;
+margin-top: 30px;
   overflow: hidden;
   width: 100%;
   max-width: 100%;
@@ -47,14 +50,14 @@ margin-top: 50px;
 
 .carousel-track {
   display: flex;
-  width: calc(200px * 6); /* 6 images * width */
-  animation: scroll 5s linear infinite;
-  gap: 80px;
+  width: calc(200px * 15); /* 6 images * width */
+  animation: scroll 7s linear infinite;
+  gap: 60px;
 }
 
 .carousel-slide {
   flex: 0 0 auto;
-  width: 200px;
+  width: 250px;
   margin: 0 15px;
   border-radius: 10px;
   overflow: hidden;
@@ -62,7 +65,7 @@ margin-top: 50px;
 
 .carousel-slide img {
   width: 100%;
-  height: auto;
+  height: 170px;
   display: block;
   object-fit: cover;
 }
@@ -77,6 +80,7 @@ margin-top: 50px;
   font-size: 2.5rem;
   color: #ad844b; /* Elegant pink */
   margin-bottom: 10px;
+ 
 }
 
 .plan-para {
@@ -105,7 +109,7 @@ margin-top: 50px;
 }
 
 .cards > div:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -189,7 +193,7 @@ margin-top: 50px;
 .hero-title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
   font-family: 'Georgia', serif;
 }
 
@@ -229,7 +233,8 @@ margin-top: 50px;
   .hero-title {
     font-size: 2rem;
     line-height: 3;
-  }
+    margin-bottom: -20px;
+  
 
   .hero-subtitle {
     font-size: 1.2rem;

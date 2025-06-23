@@ -3,7 +3,7 @@ import { galleryData } from './photos.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import './style.css';
 
-const categories = ["All", "Mehendi", "Haldi", "Sangeet"];
+const categories = ["All", "Mehendi", "Haldi", "Sangeet" , "Anniversary" , "Corporate"];
 
 export default function Index() {
   const [activeCategory, setActiveCategory] = useState("All");

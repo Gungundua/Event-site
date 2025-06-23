@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Photo from "../assets/Photo.jpg";
-import photo1 from "../assets/photo1.jpg";
+
+
+import photo1 from "../assets/ankit.jpg";
 import Wrapper from "./style.js";
 
 // Animation Variants
@@ -75,18 +77,7 @@ const AboutUs = () => {
         </p>
       </motion.div>
 
-      {/* Vision Section */}
-      <motion.div
-        className="vision-container"
-        variants={fadeIn}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="vision-line"></div>
-        <h1 className="vision">We Curate Special Moments into Memories</h1>
-        <div className="vision-line"></div>
-      </motion.div>
+      
 
       {/* Founder Section */}
       <motion.div
@@ -111,6 +102,18 @@ const AboutUs = () => {
             the core of our approach.
           </p>
         </div>
+      </motion.div>
+      {/* Vision Section */}
+      <motion.div
+        className="vision-container"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="vision-line"></div>
+        <h1 className="vision">We Curate Special Moments into Memories</h1>
+        <div className="vision-line"></div>
       </motion.div>
     </Wrapper>
   );

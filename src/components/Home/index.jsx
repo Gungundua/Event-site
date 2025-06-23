@@ -85,27 +85,27 @@ export default function index() {
       <div className='cards'>
         <div className='card1'>
           <img src={consultation} alt="" className='card-image'/>
-          <h1 className='card-headings'>Initial Consultation</h1>
+          <h2 className='card-heading'>Initial Consultation</h2>
           <p className='card-para'>Share your vision and requirements with our expert planners</p>
         </div>
         <div className='card2'>
           <img src={budget} alt="" className='card-image' />
-          <h1 className='card-heading'>Budget & Timeline</h1>
+          <h2 className='card-heading'>Budget & Timeline</h2>
           < p className='card-para'> Create a realistic budget and timeline for your perfect event</p>
         </div>
         <div className='card3'>
           <img src={venue} alt="" className='card-image' />
-          <h1 className='card-heading'>Venue Selection</h1>
+          <h2 className='card-heading'>Venue Selection</h2>
           <p className='card-para'>Choose from our curated list of premium venues</p>
         </div>
         <div className='card4'>
           <img className='card-image' src={coordination} alt="" />
-          <h1 className='card-heading'>Vendor Coordination</h1>
+          <h2 className='card-heading'>Vendor Coordination</h2>
           <p className='card-para'>We handle all vendor bookings and coordination</p>
         </div>
         <div className='card5'>
           <img className="card-image"src={execution} alt="" />
-          <h1 className='card-heading'>Event Execution</h1>
+          <h2 className='card-heading'>Event Execution</h2>
           <p className='card-para'>Sit back and enjoy your perfectly planned celebration</p>
         </div>
       </div>

@@ -4,6 +4,7 @@ const Wrapper = styled.div`
     width: 100%;
     object-fit: contain;
     height: auto;
+    margin-top: 80px;
   }
   .latest-blog {
     font-family: "Great Vibes", Sans-serif;

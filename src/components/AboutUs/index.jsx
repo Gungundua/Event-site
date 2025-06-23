@@ -77,7 +77,17 @@ const AboutUs = () => {
         </p>
       </motion.div>
 
-      
+       <motion.div
+        className="vision-container"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="vision-line"></div>
+        <h1 className="vision">We Curate Special Moments into Memories</h1>
+        <div className="vision-line"></div>
+      </motion.div>
 
       {/* Founder Section */}
       <motion.div
@@ -104,17 +114,6 @@ const AboutUs = () => {
         </div>
       </motion.div>
       {/* Vision Section */}
-      <motion.div
-        className="vision-container"
-        variants={fadeIn}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="vision-line"></div>
-        <h1 className="vision">We Curate Special Moments into Memories</h1>
-        <div className="vision-line"></div>
-      </motion.div>
     </Wrapper>
   );
 };

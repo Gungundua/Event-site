@@ -62,7 +62,7 @@ flex: 1;
   transform: scale(1.1);
 }
 .footer p {
-  margin: 0;
+  // margin: 0;
   font-size: 12px;
   text-align: center;
   width: 100%;
@@ -79,7 +79,7 @@ flex: 1;
     align-items: center;
     justify-content: space-between;
     height: auto;
-    padding: 20px 20px 60px 0px;
+    padding: 20px 20px 30px 0px;
   }
   .footer p {
     position: absolute;

@@ -15,10 +15,12 @@ const Wrapper = styled.section`
   justify-content: space-between;
   align-items: center;
   padding: 0.9rem 2rem; 
-  background: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: blur(10px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+  background: rgba(236, 231, 225);
+  backdrop-filter: blur(10px);
+  height: 80px;
   
   @media (max-width: 768px){
   padding: 0.9rem 1rem;
@@ -53,7 +55,7 @@ const Wrapper = styled.section`
     margin: 0;
     padding-right: 70px;
     color:rgb(103, 64, 9);
-    font-size: 15.5px;
+    font-size: 16px;
     font-weight: 600;
     transition: all 0.3s ease;
   }

@@ -6,7 +6,7 @@ object-fit: contain;
 max-width: 100%;
 height: auto;
 display: block;
-margin: 0 auto;
+margin-top: 80px;
 }
 
 .section1{
@@ -14,13 +14,17 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-max-width: 60%;
+max-width: 90%;
+width: 60%;
 align-self: center;
 margin: auto;
 text-align: center;
-margin-top: 30px;
 
+@media (max-width: 768px){
+width: 90%;
 }
+}
+
 .section2{
 display: flex;
 flex-direction: column;
@@ -30,18 +34,24 @@ max-width: 95%;
 align-self: center;
 margin: auto;
 text-align: center;
-margin-top: 30px;
 }
+
 h1{
 color: #ad844b;
-font-size: 45px;
+font-size: 50px;
 font-style: italic;
+font-family: "Great Vibes", cursive;
+font-weight: 500;
+margin-top: 40px;
+word-spacing: 6px;
 }
+
 p{
 color: #5d6e5e;
 }
+
 .carousel-container {
-margin-top: 30px;
+margin-top: 50px;
   overflow: hidden;
   width: 100%;
   max-width: 100%;
@@ -50,14 +60,14 @@ margin-top: 30px;
 
 .carousel-track {
   display: flex;
-  width: calc(200px * 15); /* 6 images * width */
-  animation: scroll 7s linear infinite;
-  gap: 60px;
+  width: calc(200px * 6);
+  animation: scroll 5s linear infinite;
+  gap: 80px;
 }
 
 .carousel-slide {
   flex: 0 0 auto;
-  width: 250px;
+  width: 200px;
   margin: 0 15px;
   border-radius: 10px;
   overflow: hidden;
@@ -65,10 +75,11 @@ margin-top: 30px;
 
 .carousel-slide img {
   width: 100%;
-  height: 170px;
+  height: auto;
   display: block;
   object-fit: cover;
 }
+
 .plan {
   padding: 60px 20px;
   background-color: #fffafc; /* Soft background */
@@ -80,7 +91,6 @@ margin-top: 30px;
   font-size: 2.5rem;
   color: #ad844b; /* Elegant pink */
   margin-bottom: 10px;
- 
 }
 
 .plan-para {
@@ -109,7 +119,7 @@ margin-top: 30px;
 }
 
 .cards > div:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,10 +130,11 @@ margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.card-heading, .card-headings {
+.card-heading {
   font-size: 1.3rem;
   color: #ad844b;
   margin-bottom: 10px;
+  font-family: 
 }
 
 .card-para {
@@ -131,6 +142,7 @@ margin-top: 30px;
   color: #666;
   line-height: 1.5;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -140,7 +152,7 @@ margin-top: 30px;
   }
 
 }
-/* Responsive */
+
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
@@ -193,7 +205,8 @@ margin-top: 30px;
 .hero-title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 0px;
+  line-height: 3;
+  margin-bottom: -20px;
   font-family: 'Georgia', serif;
 }
 
@@ -228,13 +241,12 @@ margin-top: 30px;
   
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
     line-height: 3;
-    margin-bottom: -20px;
-  
+  }
 
   .hero-subtitle {
     font-size: 1.2rem;

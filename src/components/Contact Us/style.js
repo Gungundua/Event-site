@@ -1,4 +1,4 @@
-import styled , { keyframes }from "styled-components";
+import styled, { keyframes } from "styled-components"
 
 const slideInLeft = keyframes`
   from {
@@ -9,7 +9,7 @@ const slideInLeft = keyframes`
     opacity: 1;
     transform: translateX(0);
   }
-`;
+`
 
 const slideInRight = keyframes`
   from {
@@ -20,33 +20,34 @@ const slideInRight = keyframes`
     opacity: 1;
     transform: translateX(0);
   }
-`;
-
+`
 
 const Wrapper = styled.section`
+  min-height: 100vh;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
-  margin-top: 78px;
-  
+  margin-top: 58px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 
   .sections {
     display: flex;
-
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
   }
-
 
   .getintouch {
     flex: 1;
     min-width: 300px;
-    border: 5px solid #884d26;
+    border: 5px solid #884D26;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     animation: ${slideInLeft} 0.7s ease forwards;
+    box-sizing: border-box;
   }
 
   .getintouch h1 {
@@ -55,25 +56,42 @@ const Wrapper = styled.section`
     color: #222;
   }
 
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .info p {
-    margin:15px 0;
+    margin: 15px 0;
     font-size: 16px;
     color: #333;
     line-height: 1.5;
-    
   }
 
   .info i {
-    color: #884d26;
+    color: #884D26;
     margin-right: 10px;
   }
 
-  .connectform {
-  flex: 1;
-  min-width: 300px;
-  animation: ${slideInRight} 0.7s ease backwards;
-}
+  .map {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
 
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  }
+
+  .connectform {
+    flex: 1;
+    min-width: 300px;
+    animation: ${slideInRight} 0.7s ease backwards;
+    box-sizing: border-box;
+  }
 
   .connectform h2 {
     font-size: 32px;
@@ -102,6 +120,7 @@ const Wrapper = styled.section`
     font-size: 14px;
     outline: none;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-sizing: border-box;
   }
 
   .double-inputs input {
@@ -112,21 +131,21 @@ const Wrapper = styled.section`
   .submitbtn {
     width: 130px;
     padding: 10px 20px;
-    background-color: #884d26;
+    background-color: #884D26;
     color: white;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     align-self: flex-start;
     transition: background-color 0.3s ease;
-
     &:hover {
-      background-color: #6e3c1c;
+      background-color: #6E3C1C;
     }
   }
 
-  /* 📱 Mobile Styles */
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 487px) {
+    padding: 20px;
+
     .sections {
       flex-direction: column;
     }
@@ -135,8 +154,16 @@ const Wrapper = styled.section`
       flex-direction: column;
     }
 
-    .getintouch, .connectform {
+    .getintouch,
+    .connectform {
       padding: 20px;
+      width: 100%;
+    }
+
+    .map {
+      iframe {
+        height: 200px;
+      }
     }
 
     .connectform h2,
@@ -155,6 +182,6 @@ const Wrapper = styled.section`
       font-size: 15px;
     }
   }
-`;
+`
 
-export default Wrapper;
+export default Wrapper
